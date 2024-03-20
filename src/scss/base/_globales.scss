@@ -1,0 +1,45 @@
+@use 'variables' as v; //importar desde _variables.scss
+
+html{
+    font-size: 62.5%; /* Establece el tamaño de fuente base en 10px */
+    box-sizing: border-box; /* Incluye los bordes en el tamaño total del elemento */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Hereda el box-sizing de los elementos */
+}
+
+body{
+    font-family: v.$fuente_principal;
+    font-size:  1.6rem; /* Tamaño de fuente (16px) */
+    line-height: 1.5; /* Altura de línea */
+}
+
+p{
+     font-size: 2rem; /* Tamaño de fuente de párrafo (20px) */
+     color: v.$negro;
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 120rem; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    margin: 0 0 5rem 0;
+}
+h1{
+    font-size: 4rem;//tamaño de fuente
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+

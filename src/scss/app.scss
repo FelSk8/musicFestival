@@ -1,0 +1,8 @@
+// //anterior 
+// @import 'base/variables';
+// @import 'contenido/contenido';
+
+//nueva forma de import
+
+@use 'base';
+@use 'layout';
