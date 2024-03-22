@@ -1,4 +1,11 @@
+// Importar y reexportar variables de estilos
 @forward 'variables';
+
+// Importar y reexportar mixins de estilos
 @forward 'mixins';
+
+// Importar y reexportar estilos de normalización para compatibilidad entre navegadores
 @forward 'normalize';
+
+// Importar y reexportar estilos globales para configuraciones comunes en todo el sitio
 @forward 'globales';

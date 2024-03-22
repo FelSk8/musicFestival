@@ -1,3 +1,4 @@
+// Importar y asignar el módulo de variables de estilos con un alias 'v'
 @use 'variables' as v;
 
 // @mixin heading($color) {
@@ -7,26 +8,32 @@
 //     letter-spacing: 10px;
 // }
 
-@mixin telefono{
-    @media (min-width: v.$telefono){
+
+
+// Mixin para definir estilos específicos para pantallas de teléfono
+@mixin telefono {
+    @media (min-width: v.$telefono) {
         @content;
     }
 }
 
+// Mixin para definir estilos específicos para pantallas de tablet
 @mixin tablet {
-    @media (min-width: v.$tablet){
+    @media (min-width: v.$tablet) {
         @content;
     }
 }
 
+// Mixin para definir estilos específicos para pantallas de escritorio
 @mixin desktop {
-    @media (min-width: v.$desktop){
+    @media (min-width: v.$desktop) {
         @content;
     }
 }
 
+// Mixin para definir estilos específicos para pantallas de escritorio XL
 @mixin desktop {
-    @media (min-width: v.$desktopXL){
+    @media (min-width: v.$desktopXL) {
         @content;
     }
 }
