@@ -7,6 +7,7 @@
     h1{
         color: v.$blanco;
         text-align: center;
+        text-transform: uppercase;
       
         @include m.tablet {
             margin: 0;

@@ -18,6 +18,7 @@ body{
 p{
      font-size: 2rem; /* Tamaño de fuente de párrafo (20px) */
      color: v.$negro;
+     line-height: 1.5;
 }
 
 .contenedor{
@@ -43,3 +44,7 @@ h3{
     font-size: 3rem;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}

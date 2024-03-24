@@ -32,9 +32,11 @@
         color: v.$blanco;
         font-size: 7rem;
         margin: 0;
+        text-transform: uppercase;
     }
     p{
-        background-color: v.$rosa;
+        background: rgb(231,148,2);
+        background: linear-gradient(90deg, rgba(231,148,2,1) 0%, rgba(232,72,15,1) 100%); 
         display: inline-block;
         padding: 1rem 2rem;
         color: v.$blanco;
