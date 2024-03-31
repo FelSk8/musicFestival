@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup{
+    background: rgb(231,148,2);
+    background: linear-gradient(90deg, rgba(231,148,2,1) 0%, rgba(232,72,15,1) 100%); 
+    padding: 5rem 0;
+
+    h3, p {
+        text-align: center;
+        color: v.$blanco;
+    }
+
+    .dia{
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+
+}
+
+.escenario-contenedor{
+    @include m.tablet{
+        @include m.grid(2, 5rem)
+    }
+
+    
+}
+
+.escenario{
+    padding-top: 2rem;
+
+    .nombre-escenario{
+        &:after {
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+
+.red .nombre-escenario:after {
+background-image: url(../img/icono_edm.png);
+}
+.black .nombre-escenario:after {
+    background-image: url(../img/icono_edm.png);
+}
+.blue .nombre-escenario:after {
+    background-image: url(../img/icono_edm.png);
+}
+.white .nombre-escenario:after {
+    background-image: url(../img/icono_edm.png);
+}
+
+.calendario{
+    @include m.resetear-lista;
+    li{
+        padding: 2.5rem;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+
+.bg-rojo{
+    background-color: v.$rojo;
+
+    li:nth-child(odd){
+        background-color: darken(v.$rojo, 10%);
+    }
+}
+.bg-black{
+    background-color: v.$negro;
+    li:nth-child(odd){
+        background-color: darken(v.$blanco, 1%);
+    }
+}
+.bg-blue{
+    background-color: v.$azul;
+    li:nth-child(odd){
+        background-color: darken(v.$azul, 10%);
+    }
+}
+.bg-white{
+    background-color: v.$verde;
+    li:nth-child(odd){
+        background-color: darken(v.$verde, 10%);
+    }
+}
