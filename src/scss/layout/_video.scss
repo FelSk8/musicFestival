@@ -18,7 +18,9 @@
     }
 
     video{
-        width: auto;
+        width: 100%; // Ajuste para dispositivos móviles
+        max-width: 100%; // Ajuste para dispositivos móviles
+        max-height: 100%; // Ajuste para dispositivos móviles
         display: block;
         @include m.desktop {
             width: 100%;
