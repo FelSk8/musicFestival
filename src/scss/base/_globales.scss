@@ -13,6 +13,13 @@ body{
     font-family: v.$fuente_principal;
     font-size:  1.6rem; /* Tamaño de fuente (16px) */
     line-height: 1.5; /* Altura de línea */
+
+    &.fijar-body{
+        overflow: hidden;
+    }
+    &.body-scroll{
+        padding-top: 8.6rem;
+    }
 }
 
 p{
